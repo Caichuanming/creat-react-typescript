@@ -1,1 +1,0 @@
-# creat-react-typescript
