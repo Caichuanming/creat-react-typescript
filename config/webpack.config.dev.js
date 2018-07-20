@@ -143,7 +143,8 @@ module.exports = {
           {
             test: /\.(js|jsx|mjs)$/,
             include: paths.appSrc,
-            loader: require.resolve('babel-loader'),
+            // loader: require.resolve('babel-loader'),
+            loader: 'babel?presets[]=react&presets[]=es2015',
             options: {
               
               compact: true,
@@ -207,9 +208,13 @@ module.exports = {
               {
                 loader: "style-loader" // creates style nodes from JS strings
               }, {
-                loader: "css-loader" // translates CSS into CommonJS
+                loader: "css-loader", options: {
+                  sourceMap: true
+                } // translates CSS into CommonJS
               }, {
-                loader: "sass-loader" // compiles Sass to CSS
+                loader: "sass-loader", options: {
+                  sourceMap: true
+                } // compiles Sass to CSS
               }
             ]
           },

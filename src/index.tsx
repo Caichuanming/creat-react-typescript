@@ -1,11 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './pages/App';
-import './pages/App.css';
-import registerServiceWorker from './registerServiceWorker';
+import App from './App';
 
+// 入口
 ReactDOM.render(
-  <App />,
-  document.getElementById('root') as HTMLElement
+    <App />,
+    document.getElementById('root') as HTMLElement
 );
-registerServiceWorker();
