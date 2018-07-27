@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IndexRoute, Route, Router } from 'react-router';
-import Index from "./pages/index";
-import Index2 from "./pages/index2";
+import { Index } from "./pages/index";
+import { Index2 } from "./pages/index2";
 
 const routes = (
     <Router>

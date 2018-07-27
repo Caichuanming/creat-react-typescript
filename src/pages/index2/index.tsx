@@ -1,15 +1,16 @@
 import * as React from 'react';
 import { Link } from 'react-router';
+import { Page } from '../../component/Page';
 import './index.scss';
 
 
-export default class Index2 extends React.Component<{}, {}> {
+export class Index2 extends React.Component<{}, {}> {
   public render() {
     return (
-      <div className="container">
+      <Page>
         <h1>跳转了</h1>
-        <Link to={"/"} >1111</Link>
-      </div>
+        <Link to="/">返回首页</Link>
+      </Page>
     );
   }
 }
